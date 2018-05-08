@@ -40,7 +40,7 @@ public class MSTEdmonds implements MSTAlgorithm
         while (true)
         {
             tree = getMinimumIncomingEdges(graph, forest);
-            cycles = tree.getCycles();
+            cycles = tree.getCycles(); //Get cycles
             if (cycles.isEmpty())
             {
                 //Add all corresponding found cyclic edges to spanning tree

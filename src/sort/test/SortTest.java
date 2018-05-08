@@ -17,10 +17,7 @@ package sort.test;
 
 import org.junit.jupiter.api.Test;
 import sort.AbstractSort;
-import sort.comparison.HeapSort;
-import sort.comparison.InsertionSort;
-import sort.comparison.SelectionSort;
-import sort.comparison.ShellSortKnuth;
+import sort.comparison.*;
 import sort.distribution.IntegerBucketSort;
 import sort.distribution.LSDRadixSort;
 import sort.divide_conquer.IntroSort;
@@ -29,6 +26,7 @@ import sort.divide_conquer.QuickSort;
 import utils.Utils;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.Random;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
@@ -43,17 +41,26 @@ public class SortTest
     {
         final int ITERATIONS = 100;
         final int SIZE = 100;
+
+        SelectionSort<Integer> sorter = new SelectionSort<Integer>();
+
         
         testAccuracy(ITERATIONS, SIZE, new SelectionSort<>());
         testAccuracy(ITERATIONS, SIZE, new InsertionSort<>());
         testAccuracy(ITERATIONS, SIZE, new HeapSort<>());
         testAccuracy(ITERATIONS, SIZE, new ShellSortKnuth<>());
+
         testAccuracy(ITERATIONS, SIZE, new MergeSort<>());
         testAccuracy(ITERATIONS, SIZE, new QuickSort<>());
+
         testAccuracy(ITERATIONS, SIZE, new IntroSort<>(new HeapSort<Integer>()));
         testAccuracy(ITERATIONS, SIZE, new IntroSort<>(new ShellSortKnuth<Integer>()));
-        testAccuracy(ITERATIONS, SIZE, new IntegerBucketSort(0, SIZE));
-        testAccuracy(ITERATIONS, SIZE, new LSDRadixSort());
+
+        testAccuracy(ITERATIONS, SIZE, new IntroSort<>(new MergeSort<Integer>()));
+        testAccuracy(ITERATIONS, SIZE, new IntroSort<>(new QuickSort<Integer>()));
+
+//        testAccuracy(ITERATIONS, SIZE, new IntegerBucketSort(0, SIZE));
+//        testAccuracy(ITERATIONS, SIZE, new LSDRadixSort());
 //      testAccuracy(ITERATIONS, SIZE, new MSDRadixSort());
     }
     
@@ -80,13 +87,18 @@ public class SortTest
     {
         final int ITERATIONS = 1000;
         final int INIT_SIZE  = 100;
-        final int MAX_SIZE   = 3000;
+        final int MAX_SIZE   = 3000; //Changed from 3k to 1k
         final int INCREMENT  = 100;
         final int OPS        = 1;
         final Random RAND    = new Random(0);
         
         SortSpeed comp = new SortSpeed();
-        comp.printTotal(ITERATIONS, INIT_SIZE, MAX_SIZE, INCREMENT, OPS, RAND, new HeapSort<>(), new ShellSortKnuth<>(), new SelectionSort<>(), new InsertionSort<>());
+
+//        comp.printTotal(ITERATIONS, INIT_SIZE, MAX_SIZE, INCREMENT, OPS, RAND, new IntroSort<>(new HeapSort<Integer>()), new IntroSort<>(new ShellSortKnuth<Integer>()));
+
+        comp.printTotal(ITERATIONS, INIT_SIZE, MAX_SIZE, INCREMENT, OPS, RAND, new HeapSort<>(), new ShellSortKnuth<>(), new MergeSort<>(), new QuickSort<>(), new IntroSort<>(new HeapSort<Integer>()), new IntroSort<>(new ShellSortKnuth<Integer>()), new IntroSort<>(new MergeSort<Integer>()));
+//        comp.printTotal(ITERATIONS, INIT_SIZE, MAX_SIZE, INCREMENT, OPS, RAND, new QuickSort<>(), new IntroSort<>(new QuickSort<Integer>()));
+
 //      comp.printTotal(ITERATIONS, INIT_SIZE, MAX_SIZE, INCREMENT, OPS, RAND, new HeapSort<>(), new ShellSortKnuth<>(), new MergeSort<>(), new QuickSort<>(), new IntroSort<>(new HeapSort<Integer>()), new IntroSort<>(new ShellSortKnuth<Integer>()));
 //      comp.printTotal(ITERATIONS, INIT_SIZE, MAX_SIZE, INCREMENT, OPS, RAND, new IntegerBucketSort(0, MAX_SIZE), new LSDRadixSort(), new QuickSort<>(), new HeapSort<>(), new ShellSortKnuth<>(), new MergeSort<>());
 //      comp.printTotal(ITERATIONS, INIT_SIZE, MAX_SIZE, INCREMENT, OPS, RAND, new IntegerBucketSort(0, MAX_SIZE), new LSDRadixSort(), new QuickSort<>());
@@ -106,7 +118,7 @@ public class SortTest
         final Random RAND    = new Random(0);
         
         SortOperation comp = new SortOperation();
-        comp.printTotal(ITERATIONS, INIT_SIZE, MAX_SIZE, INCREMENT, OPS, RAND, new HeapSort<>(), new ShellSortKnuth<>(), new SelectionSort<>(), new InsertionSort<>());
+//        comp.printTotal(ITERATIONS, INIT_SIZE, MAX_SIZE, INCREMENT, OPS, RAND, new HeapSort<>(), new ShellSortKnuth<>(), new SelectionSort<>(), new InsertionSort<>());
 //      comp.printTotal(ITERATIONS, INIT_SIZE, MAX_SIZE, INCREMENT, OPS, RAND, new HeapSort<>(), new ShellSortKnuth<>(), new MergeSort<>(), new QuickSort<>(), new IntroSort<>(new HeapSort<Integer>()), new IntroSort<>(new ShellSortKnuth<Integer>()));
     }
 
@@ -151,13 +163,26 @@ public class SortTest
         @SuppressWarnings("unchecked")
         public void add(final Random RAND, final int SIZE, long[][] times, AbstractSort<Integer>... engines)
         {
-            final Integer[] KEYS = Utils.getRandomIntegerArray(RAND, SIZE, SIZE);
+//            final Integer[] KEYS = Utils.getRandomIntegerArray(RAND, SIZE, SIZE);
+
+            final Integer[] KEYS = Utils.getIntegerArray(RAND, SIZE, SIZE, null, 0);
+//            final Integer[] KEYS = Utils.getIntegerArray(RAND, SIZE, SIZE, Comparator.naturalOrder(), 0); //Ordered
+//            final Integer[] KEYS = Utils.getIntegerArray(RAND, SIZE, SIZE, Comparator.reverseOrder(), 0); //Reverse
+//            final Integer[] KEYS = Utils.getIntegerArray(RAND, SIZE, SIZE, Comparator.naturalOrder(), 0.25); //Partially ordered
+//            final Integer[] KEYS = Utils.getIntegerArray(RAND, SIZE, SIZE, Comparator.reverseOrder(), 0.40); //Partially reverse ordered
+
+//            for(int i = 0; i<SIZE; i++){
+//                System.out.print(Integer.toString(KEYS[i]) + " ");
+//            }
+//            System.out.println();
+
+//            final Integer[] KEYS = Utils.getOrderedIntegerArray(RAND, SIZE, SIZE); //Ordered array
+
             final int LEN = engines.length;
             AbstractSort<Integer> engine;
             Integer[] temp;
             long st, et;
             int i;
-            
             for (i=0; i<LEN; i++)
             {
                 temp = Arrays.copyOf(KEYS, SIZE);
@@ -176,7 +201,12 @@ public class SortTest
         @SuppressWarnings("unchecked")
         public void add(final Random RAND, final int SIZE, long[][] times, AbstractSort<Integer>... engines)
         {
-            final Integer[] KEYS = Utils.getRandomIntegerArray(RAND, SIZE, SIZE);
+//            final Integer[] KEYS = Utils.getRandomIntegerArray(RAND, SIZE, SIZE);
+
+            final Integer[] KEYS = Utils.getIntegerArray(RAND, SIZE, SIZE, null, 0);
+
+//            final Integer[] KEYS = Utils.getOrderedIntegerArray(RAND, SIZE, SIZE); //Ordered array
+
             final int LEN = engines.length;
             Integer[] temp;
             int i;

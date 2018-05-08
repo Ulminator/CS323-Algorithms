@@ -44,8 +44,8 @@ public class InsertionSort<T extends Comparable<T>> extends AbstractSort<T>
     {
         int beginH = beginIndex + h;
         
-        for (int i=beginH; i<endIndex; i++)
-            for (int j=i; j>=beginH && compareTo(array, j, j-h) < 0; j-=h)
+        for (int i=beginH; i<endIndex; i++) //Iterates through right
+            for (int j=i; j>=beginH && compareTo(array, j, j-h) < 0; j-=h) //Sorts left
                 swap(array, j, j-h);
     }
 }

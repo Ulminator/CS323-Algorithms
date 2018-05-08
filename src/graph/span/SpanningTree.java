@@ -137,7 +137,12 @@ public class SpanningTree implements Comparable<SpanningTree>
             }
         }
     }
-    
+
+    /*
+    USEFUL
+    Sorts into same veritces order and concatonate them into a list
+    Use these to identify if duplicates in minimum spanning trees
+     */
     public String getUndirectedSequence()
     {
         int i, size = size(), min, max;

@@ -29,6 +29,14 @@ public class DisjointSet
         s_root = new int[size];
         Arrays.fill(s_root, -1);
     }
+
+    //Creates a copy of a disjoint set
+    public DisjointSet(DisjointSet disjoint){
+        s_root = new int[disjoint.s_root.length];
+        for(int x=0; x<disjoint.s_root.length; x++){
+            s_root[x] = disjoint.s_root[x];
+        }
+    }
     
     public int union(int id1, int id2)
     {

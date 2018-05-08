@@ -17,9 +17,8 @@ package graph.test;
 
 import graph.Edge;
 import graph.Graph;
-import graph.span.MSTAll;
-import graph.span.MSTAllPrim;
-import graph.span.SpanningTree;
+import graph.span.*;
+//import graph.span.MSTAllPrim;
 import org.junit.jupiter.api.Test;
 import utils.Utils;
 
@@ -40,8 +39,8 @@ public class MSTAllTest
     public void test()
     {
         List<Graph> graphs = new ArrayList<>();
-        graphs.add(getGraph1a());
-        graphs.add(getGraph2a());
+        graphs.add(getGraph1a());//False
+        graphs.add(getGraph2a());//False
         graphs.add(getGraph3a());
         graphs.add(getGraph3b());
         graphs.add(getGraph3c());
@@ -49,10 +48,18 @@ public class MSTAllTest
         graphs.add(getGraph4b());
         graphs.add(getGraph4c());
         graphs.add(getGraph5a());
+        graphs.add(getGraph5b());
+        graphs.add(getHouse());
 
         int i, correct = 0, total = graphs.size();
-        MSTAll gold = new MSTAllPrim();
-        MSTAll system = new MSTAllPrim();
+//        MSTAll gold = new MSTAllPrim();
+//        MSTAll gold = new MSTUlmerPrim();
+        MSTAll gold = new MSTUlmerKruskal();
+
+//        MSTAll system = new MSTAllPrim();
+//        MSTAll system = new MSTUlmerPrim();
+        MSTAll system = new MSTUlmerKruskal();
+
         Graph graph;
         boolean b;
         
@@ -286,6 +293,7 @@ public class MSTAllTest
     boolean test(List<SpanningTree> gTrees, List<SpanningTree> sTrees)
     {
         if (sTrees == null) return false;
+
         if (gTrees.size() != sTrees.size()) return false;
         
         Set<String> g = getSequenceSet(gTrees);
@@ -294,7 +302,7 @@ public class MSTAllTest
         if (g.size() != s.size()) return false;
         g.removeAll(s);
         if (!g.isEmpty()) return false;
-        
+        System.out.println(sTrees);
         return true;
     }
     

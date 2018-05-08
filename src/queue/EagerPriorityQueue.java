@@ -51,7 +51,7 @@ public class EagerPriorityQueue<T extends Comparable<T>> extends AbstractPriorit
         int index = Collections.binarySearch(keys, key, comparator);
         
         // if element not found, the appropriate insert index = -(index +1)
-        if (index < 0) index = -(index + 1);
+        if (index < 0) index = -(index + 1); //No elements present
         
         keys.add(index, key);
     }

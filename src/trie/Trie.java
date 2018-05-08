@@ -90,7 +90,7 @@ public class Trie<T>
 
         TrieNode<T> parent = node.getParent();
 
-        while (parent != null)
+        while (parent != null) //parent of root
         {
             parent.removeChild(node.getKey());
             

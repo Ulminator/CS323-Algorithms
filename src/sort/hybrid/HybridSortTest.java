@@ -37,11 +37,11 @@ public class HybridSortTest
     void testAccuracy()
     {
         HybridSort<Integer> choi = new HybridSortChoi<>();
-        HybridSort<Integer> mine = new HybridSortChoi<>();
+        HybridSort<Integer> mine = new HybridSortUlmer<>();
         
         Integer[][] input = {{0,1,2,3},{7,6,5,4},{0,3,1,2},{4,7,6,5},{9,8,11,10}};
-        testAccuracy(input, choi, mine);
-        
+        testAccuracy(input, choi, mine); // Standard accuracy check
+
         for (int row=10; row<=20; row++)
             for (int col=10; col<=20; col++)
                 for (int i=0; i<100; i++)
@@ -63,10 +63,11 @@ public class HybridSortTest
         double ratio = 0.25;
         
         HybridSort<Integer> choi = new HybridSortChoi<>();
-        HybridSort<Integer> mine = new HybridSortChoi<>();
-        
-//        for (col=100; col<=1500; col+=100)
-        for (row=100; row<=1500; row+=100)
+        HybridSort<Integer> mine = new HybridSortUlmer<>();
+
+
+        for (col=100; col<=3000; col+=100)
+//        for (row=100; row<=3000; row+=100)
         {
             long[] time = testSpeed(row, col, ratio, choi, mine);
             StringJoiner join = new StringJoiner("\t");
@@ -129,11 +130,13 @@ public class HybridSortTest
         Integer[][] input = new Integer[row][];
         
         for (int i=0; i<row; i++)
-            input[i] = randomArray(col, ratio);
+            input[i] = randomArray(col, ratio); // Input[i] is a row of the subarray
         
-        return input;
+        return input; // Returns a 2D subarray to add to the main array
     }
 
+    //Generates a random number between 0-4 and handles them as different cases. These cases represent the types
+    // of ordering in the rows of the 2D array.
     private Integer[] randomArray(int size, double ratio)
     {
         switch (rand.nextInt(5))
@@ -152,10 +155,10 @@ public class HybridSortTest
         Integer[] array = new Integer[size];
         int shuffle = (int)(size*ratio);
         
-        for (int i=0; i<size; i++) array[i] = rand.nextInt();
-        if (comparator != null) Arrays.sort(array, comparator);
+        for (int i=0; i<size; i++) array[i] = rand.nextInt(size); //Generate random integers for the number of columns
+        if (comparator != null) Arrays.sort(array, comparator); //Sort according to the comparator in question
         
-        for (int i=0; i<shuffle; i++)
+        for (int i=0; i<shuffle; i++) // If shuffle != 0, then swap that percent of items in the sorted array
             swap(array, rand.nextInt(array.length), rand.nextInt(array.length));
         
         return array;
@@ -163,7 +166,7 @@ public class HybridSortTest
 
     private void swap(Integer[] array, int i, int j)
     {
-        int t = array[i];
+        int t = array[i]; // Dummy variable
         array[i] = array[j];
         array[j] = t;
     }

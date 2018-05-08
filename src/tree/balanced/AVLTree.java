@@ -95,6 +95,6 @@ public class AVLTree<T extends Comparable<T>> extends AbstractBalancedBinarySear
             rotateLeft(node);        //Case 3
         }
         else
-            balance(node.getParent());        //Recurrsively balance parent
+            balance(node.getParent());        //Recursively balance parent
     }
 }

@@ -25,21 +25,24 @@ import java.util.List;
  */
 public class RHanoi extends AbstractHanoi
 {
+    public int counts = 0;
     @Override
     public List<String> solve(int n, char source, char intermediate, char destination)
     {
         List<String> list = new ArrayList<>();
         solve(list, n, source, intermediate, destination);
+        System.out.println(counts);
         return list;
     }
     
     private void solve(List<String> list, int n, char source, char intermediate, char destination)
     {
+        counts+=1;
+
         if (n == 0) return;
         
         //Move all plates from 'source' to 'intermediate' via 'destination' as medium
         solve(list, n-1, source, destination, intermediate);
-        
         //Record the step
         list.add(getKey(n, source, destination));
         

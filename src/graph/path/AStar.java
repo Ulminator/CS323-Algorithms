@@ -35,7 +35,7 @@ public abstract class AStar
         double[] distances = new double[graph.size()];
         Set<Integer> visited = new HashSet<>();
 
-        init(distances, previous, target);
+        init(distances, previous, target);//Initializes distances (0 for taget, infinity for else)
         queue.add(new VertexDistancePair(target, 0));
         
         while (!queue.isEmpty())

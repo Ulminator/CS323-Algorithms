@@ -62,7 +62,7 @@ public class TopologicalSort
                 //Breath-first search
                 global.addLast(local.removeFirst());
                 //Depth-first search
-//                global.addFirst(local.removeLast());
+                global.addFirst(local.removeLast());
         }
         
         if (!graph.isEmpty()) throw new IllegalArgumentException("Cyclic graph.");

@@ -27,17 +27,21 @@ import java.util.Map;
  */
 public class DHanoi extends AbstractHanoi
 {
+    public int counts = 0;
+
     @Override
     public List<String> solve(int n, char source, char intermediate, char destination)
     {
         List<String> list = new ArrayList<>();
         solve(list, n, source, intermediate, destination, new HashMap<>());
+        System.out.println(counts);
         return list;
     }
     
     private void solve(List<String> list, int n, char source, char intermediate, char destination, Map<String,int[]> map)
     {
-        if (n == 0) return;
+        counts += 1;
+        if (n == 0) { return; }
         int fromIndex = list.size();
         
         //Get previous steps to move current plate to designate destination

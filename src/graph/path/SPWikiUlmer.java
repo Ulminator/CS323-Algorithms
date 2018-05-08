@@ -23,29 +23,56 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 import java.util.regex.Pattern;
 
 
 /**
  * @author Jinho D. Choi ({@code jinho.choi@emory.edu})
  */
-public class SPWiki
+public class SPWikiUlmer
 {
     List<String> titles;
     int[][] links;
     
-    public SPWiki(InputStream inTitles, InputStream inLinks) throws Exception
+    public SPWikiUlmer(InputStream inTitles, InputStream inLinks) throws Exception
     {
         titles = getTitles(inTitles);
         links  = getLinks(inLinks, titles.size());
         
         Graph g = new Graph(titles.size());
         Dijkstra d = new Dijkstra();
-        int source = 0;
-        int target = 0;
-        
+
+        Random generator = new Random();
+//        int source = titles.indexOf("John_Travolta");
+//        int target = titles.indexOf("Michael_Jackson");
+        int source = generator.nextInt(titles.size());
+        int target = generator.nextInt(titles.size());
+
+        System.out.println("SOURCE: " +titles.get(source));
+        System.out.println("TARGET: " +titles.get(target)+"\n");
+
         // TODO:
-        System.out.println(d.getShortestPath(g, source, target));
+
+        //Populate the graph
+        for(int i=0; i<links.length; i++){
+            for(int j=0; j<links[i].length; j++){
+                g.setDirectedEdge(i, links[i][j], 1);
+            }
+        }
+
+        Integer[] path = d.getShortestPath(g, source, target);
+
+        //Print the path from source to target if it exists
+        if(path[source]!=null){
+            while(source!=target){
+                System.out.println(titles.get(source)+" ("+source+"->"+path[source]+") "+titles.get(path[source]));
+                source = path[source];
+            }
+        }
+        else{
+            System.out.println("NO PATH EXISTS");
+        }
     }
     
     public List<String> getTitles(InputStream in) throws Exception
@@ -93,8 +120,9 @@ public class SPWiki
     
     static public void main(String[] args) throws Exception
     {
-        final String TITLE_FILE = "/Users/jdchoi/Emory/webpage/public_html/courses/cs323/dat/wiki-titles-small.txt";
-        final String LINK_FILE  = "/Users/jdchoi/Emory/webpage/public_html/courses/cs323/dat/wiki-links-small.txt";
-        new SPWiki(new FileInputStream(TITLE_FILE), new FileInputStream(LINK_FILE));
+        final String TITLE_FILE = "C:/Users/Matthew/IdeaProjects/CS323_Course_Material/src/graph/path/wiki-titles-small.txt";
+        final String LINK_FILE = "C:/Users/Matthew/IdeaProjects/CS323_Course_Material/src/graph/path/wiki-links-small.txt";
+
+        new SPWikiUlmer(new FileInputStream(TITLE_FILE), new FileInputStream(LINK_FILE));
     }
 }

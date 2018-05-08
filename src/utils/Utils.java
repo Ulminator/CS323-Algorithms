@@ -62,6 +62,39 @@ public class Utils
         return array;
     }
 
+    static public Integer[] getIntegerArray(Random rand, int size, int range, Comparator<Integer> comp, double ratio){
+
+        Integer[] array = new Integer[size];
+
+        int shuffle = (int)(size*ratio);
+
+        for (int i=0; i<size; i++){ array[i] = rand.nextInt(); }
+        if (comp!=null){ Arrays.sort(array, comp); }
+        for (int i = 0; i<shuffle; i++){ swap(array, rand.nextInt(array.length), rand.nextInt(array.length)); }
+
+        return array;
+    }
+
+    static void swap(Integer[] array, int i, int j)
+    {
+        int t = array[i]; // Dummy variable
+        array[i] = array[j];
+        array[j] = t;
+    }
+
+    static public Integer[] getOrderedIntegerArray(Random rand, int size, int range)
+    {
+        Integer[] array = new Integer[size];
+
+        for (int i=0; i<size; i++){
+            array[i] = rand.nextInt(range);
+        }
+        Arrays.sort(array, Comparator.naturalOrder());
+
+        return array;
+    }
+
+
     static public List<Integer> getRandomIntegerList(Random rand, int size)
     {
         return getRandomIntegerList(rand, size, Integer.MAX_VALUE);

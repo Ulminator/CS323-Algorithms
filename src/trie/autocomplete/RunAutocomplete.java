@@ -29,6 +29,8 @@ import java.util.zip.GZIPInputStream;
  */
 public class RunAutocomplete
 {
+    //? is a wildcard (represents an unknown type)
+    // Why did Jinho do this?
     private IAutocomplete<?> auto_complete;
     
     public RunAutocomplete()
@@ -66,11 +68,12 @@ public class RunAutocomplete
             
             // TODO: print out the top 10 candidates
             candidates = auto_complete.getCandidates(prefix);
+
             System.out.println(candidates.stream().collect(Collectors.joining("\n")));
             
             System.out.print("\nPick: ");
             pick = reader.readLine();
-            
+
             // TODO: update your Trie with this pick.
             auto_complete.pickCandidate(prefix, pick);
             System.out.println("\""+pick+"\" is learned.\n");
@@ -81,14 +84,17 @@ public class RunAutocomplete
     static public void main(String[] args) throws Exception
     {
         // change the path to a local file if you have no internet connection
-        final String filepath = "https://raw.githubusercontent.com/emory-courses/cs323/master/dat/word-list.txt.gz";
+//        final String filepath = "https://raw.githubusercontent.com/emory-courses/cs323/master/dat/word-list.txt.gz";
+
+//        final String filepath = "C:/Users/Matthew/IdeaProjects/CS323_Course_Material/src/trie/autocomplete/word-list.txt.gz";
+        final String filepath = "C:/Users/Matthew/PycharmProjects/test/new_dict.txt";
         InputStream in = filepath.startsWith("http") ? new URL(filepath).openStream() : new FileInputStream(filepath);
-        GZIPInputStream zin = new GZIPInputStream(in);
+//        GZIPInputStream zin = new GZIPInputStream(in);
 
         // change the DummyAutocomplete to your class (e.g., ChoiAutocomplete)
-        IAutocomplete<?> auto = new DummyAutocomplete();
+        IAutocomplete<?> auto = new UlmerAutocomplete();
         RunAutocomplete run = new RunAutocomplete(auto);
-        run.initDictionary(zin);
+        run.initDictionary(in);
         run.run();
     }
 }
