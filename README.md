@@ -14,9 +14,10 @@ My Work
         -   MSTUlmerPrim
 - src/queue/
     -   TernaryHeap
-- src/sort/comparison/
-    -   ShellSortHibbard
-    -   ShellSortPratt
-- src/sort/distribution/MSDRadixSort
-- src/sort/hybrid/HybridSortUlmer
+- src/sort/
+    -   comparison/
+        -   ShellSortHibbard
+        -   ShellSortPratt
+    -   distribution/MSDRadixSort
+    -   hybrid/HybridSortUlmer
 - src/trie/autocomplete/UlmerAutocomplete
