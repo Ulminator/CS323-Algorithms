@@ -2,178 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa2201dc-51b0-40e1-972c-dda67e1d51a8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/dynamic/fibonacci/AbstractFibonacci.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/dynamic/fibonacci/DFibonacci.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/dynamic/fibonacci/LFibonacci.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/dynamic/fibonacci/RFibonacci.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/dynamic/hanoi/AbstractHanoi.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/dynamic/hanoi/DHanoi.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/dynamic/hanoi/RHanoi.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/dynamic/knapsack/AbstractKnapsack.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/dynamic/knapsack/DKnapsack.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/dynamic/knapsack/KnapsackItem.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/dynamic/knapsack/RKnapsack.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/dynamic/knapsack/coin/Cent.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/dynamic/knapsack/coin/Dime.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/dynamic/knapsack/coin/Dollar.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/dynamic/knapsack/coin/Half.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/dynamic/knapsack/coin/Nickel.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/dynamic/knapsack/coin/Quarter.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/dynamic/lcs/AbstractLCS.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/dynamic/lcs/DLCS.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/dynamic/lcs/RLCS.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/dynamic/test/FibonacciTest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/dynamic/test/HanoiTest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/dynamic/test/KnapsackTest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/dynamic/test/LCSTest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/graph/Edge.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/graph/Graph.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/graph/Subgraph.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/graph/flow/FordFulkerson.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/graph/flow/MFAlgorithm.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/graph/flow/MaxFlow.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/graph/match/AbstractBlossom.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/graph/match/Forest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/graph/match/Match.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/graph/match/Tree.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/graph/path/AStar$VertexDistancePair.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/graph/path/AStar.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/graph/path/Dijkstra.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/graph/path/SPWikiUlmer.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/graph/path/VertexDistancePair.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/graph/path/hw4.docx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/graph/path/hw4.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/graph/path/hw4.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/graph/path/~$hw4.docx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/graph/sort/TopologicalSort.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/graph/span/DisjointSet.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/graph/span/MSTAlgorithm.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/graph/span/MSTAll.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/graph/span/MSTChoi.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/graph/span/MSTEdmonds.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/graph/span/MSTKruskal.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/graph/span/MSTPrim.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/graph/span/MSTUlmer.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/graph/span/MSTUlmerKruskal.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/graph/span/MSTUlmerPrim.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/graph/span/MSTWord.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/graph/span/SpanningTree.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/graph/span/hw3.rar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/graph/span/hw3files.rar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/graph/span/hw3report.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/graph/span/hw3write.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/graph/test/FordFulkersonTest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/graph/test/MSTAllTest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/graph/test/MinimumSpanningTreeTest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/graph/test/PathDijkstraTest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/graph/test/TopologicalSortTest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/queue/AbstractPriorityQueue.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/queue/BinaryHeap.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/queue/EagerPriorityQueue.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/queue/LazyPriorityQueue.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/queue/PriorityQueueTest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/queue/TernaryHeap.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/sort/AbstractSort.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/sort/comparison/HeapSort.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/sort/comparison/InsertionSort.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/sort/comparison/SelectionSort.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/sort/comparison/ShellSort.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/sort/comparison/ShellSortHibbard.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/sort/comparison/ShellSortKnuth.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/sort/comparison/ShellSortPratt.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/sort/distribution/BucketSort.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/sort/distribution/DoubleBucketSort.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/sort/distribution/IntegerBucketSort.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/sort/distribution/LSDRadixSort.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/sort/distribution/MSDRadixSort.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/sort/distribution/RadixSort.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/sort/divide_conquer/IntroSort.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/sort/divide_conquer/MergeSort.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/sort/divide_conquer/QuickSort.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/sort/hybrid/HybridSort.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/sort/hybrid/HybridSortChoi.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/sort/hybrid/HybridSortTest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/sort/hybrid/HybridSortUlmer$HeapNode.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/sort/hybrid/HybridSortUlmer$MergeKSortedArrays.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/sort/hybrid/HybridSortUlmer.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/sort/test/DoubleBucketSortTest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/sort/test/SortTest$AbstractEngineComparator.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/sort/test/SortTest$SortOperation.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/sort/test/SortTest$SortSpeed.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/sort/test/SortTest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/tree/AbstractBinaryNode.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/tree/AbstractBinarySearchTree.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/tree/BinaryNode.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/tree/BinarySearchTree.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/tree/balanced/AVLNode.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/tree/balanced/AVLTree.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/tree/balanced/AbstractBalancedBinarySearchTree.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/tree/balanced/RedBlackNode.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/tree/balanced/RedBlackTree.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/tree/test/NodeTest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/tree/test/TreeTest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/tree/test/WordTreeTest$WordNode.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/tree/test/WordTreeTest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/trie/Trie.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/trie/TrieNode.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/trie/autocomplete/CandidateCountPair.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/trie/autocomplete/DummyAutocomplete.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/trie/autocomplete/IAutocomplete.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/trie/autocomplete/RunAutocomplete.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/trie/autocomplete/UlmerAutocomplete.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/trie/autocomplete/word-list.txt.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/trie/test/TrieTest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/utils/LengthComparator.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/utils/Pair.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/utils/Utils.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/utils/UtilsTest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/graph/path/hw4.docx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/graph/path/hw4.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/graph/path/hw4.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/graph/span/hw3.rar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/graph/span/hw3files.rar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/graph/span/hw3report.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/graph/span/hw3write.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/trie/autocomplete/word-list.txt.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/Matthew.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CS323_Course_Material.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/graph/path/wiki-links-small.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/CS323_Course_Material/graph/path/wiki-titles-small.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/graph/path/wiki-links-small.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/graph/path/wiki-titles-small.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/graph/span/MSTUlmer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/graph/span/MSTUlmerKruskal.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/graph/span/MSTUlmerPrim.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/queue/TernaryHeap.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sort/comparison/ShellSortHibbard.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sort/comparison/ShellSortPratt.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sort/distribution/MSDRadixSort.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sort/hybrid/HybridSortUlmer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/trie/autocomplete/UlmerAutocomplete.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/graph/path/SPWiki.java" afterPath="$PROJECT_DIR$/src/graph/path/SPWikiUlmer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dynamic/hanoi/DHanoi.java" afterPath="$PROJECT_DIR$/src/dynamic/hanoi/DHanoi.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dynamic/hanoi/RHanoi.java" afterPath="$PROJECT_DIR$/src/dynamic/hanoi/RHanoi.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/graph/path/AStar.java" afterPath="$PROJECT_DIR$/src/graph/path/AStar.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/graph/sort/TopologicalSort.java" afterPath="$PROJECT_DIR$/src/graph/sort/TopologicalSort.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/graph/span/DisjointSet.java" afterPath="$PROJECT_DIR$/src/graph/span/DisjointSet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/graph/span/MSTEdmonds.java" afterPath="$PROJECT_DIR$/src/graph/span/MSTEdmonds.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/graph/span/SpanningTree.java" afterPath="$PROJECT_DIR$/src/graph/span/SpanningTree.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/graph/test/MSTAllTest.java" afterPath="$PROJECT_DIR$/src/graph/test/MSTAllTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/graph/test/MinimumSpanningTreeTest.java" afterPath="$PROJECT_DIR$/src/graph/test/MinimumSpanningTreeTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/queue/EagerPriorityQueue.java" afterPath="$PROJECT_DIR$/src/queue/EagerPriorityQueue.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/queue/test/PriorityQueueTest.java" afterPath="$PROJECT_DIR$/src/queue/test/PriorityQueueTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sort/comparison/InsertionSort.java" afterPath="$PROJECT_DIR$/src/sort/comparison/InsertionSort.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sort/hybrid/HybridSortTest.java" afterPath="$PROJECT_DIR$/src/sort/hybrid/HybridSortTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sort/test/SortTest.java" afterPath="$PROJECT_DIR$/src/sort/test/SortTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tree/balanced/AVLTree.java" afterPath="$PROJECT_DIR$/src/tree/balanced/AVLTree.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/trie/Trie.java" afterPath="$PROJECT_DIR$/src/trie/Trie.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/trie/autocomplete/RunAutocomplete.java" afterPath="$PROJECT_DIR$/src/trie/autocomplete/RunAutocomplete.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/utils/Utils.java" afterPath="$PROJECT_DIR$/src/utils/Utils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -265,16 +94,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="146">
               <caret line="26" column="13" lean-forward="false" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MSTChoi.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/graph/span/MSTChoi.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-758">
-              <caret line="60" column="9" lean-forward="true" selection-start-line="60" selection-start-column="9" selection-end-line="60" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -752,7 +571,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1618" height="868" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -763,11 +581,11 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32110092" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7630854" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="-250" y="309" width="1586" height="821" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295129" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295129" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26329443" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32808024" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32808024" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
